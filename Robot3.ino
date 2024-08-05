@@ -15,10 +15,14 @@ void setup()
 
 void loop()
 {
+  robotFunction();
+  delay(50);
+}
+// Hàm điều khiển hoạt động của robot
+void robotFunction()
+{
   ps2x.read_gamepad(0, 0); // Đọc trạng thái của tay cầm PS2
   PS2control(); // Xử lý các tín hiệu đầu vào của tay cầm PS2
   robotManeuver(); // Xử lý thao tác di chuyển của robot qua tín hiệu analog trên joystick của tay cầm PS2
   readAndSort(); // Phân loại bóng dựa theo giá trị dọc được từ cảm biến màu sắc
-
-  delay(50); // Đặt độ trễ để tránh bị quá tải do vòng lặp
 }
