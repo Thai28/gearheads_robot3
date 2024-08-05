@@ -16,7 +16,7 @@ void setup()
 void loop()
 {
   robotFunction();
-  delay(50);
+  delay(50); // Đặt độ trễ để tránh bị quá tải do vòng lặp
 }
 // Hàm điều khiển hoạt động của robot
 void robotFunction()
