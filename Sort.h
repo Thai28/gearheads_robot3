@@ -30,4 +30,8 @@ void readAndSort()
   {
     pwm.setPWM(4, 0, 0); // Đóng servo
   }
+  else
+  {
+    pwm.setPWM(4, 0, 0); // Đóng servo  
+  }
 }
